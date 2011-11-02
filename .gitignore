@@ -1,0 +1,7 @@
+*.pyc
+.DS_Store
+*~
+settings/local.py
+media
+development.sqlite3
+
