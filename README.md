@@ -25,11 +25,17 @@ There is a separate file for each environment `settings` (development, staging, 
  * [django-grappelli](https://github.com/sehmaschine/django-grappelli): A jazzy skin for the Django admin interface.
  * [django-command-extensions](https://github.com/django-extensions): A a collection of custom extensions 
  * [fabric](http://docs.fabfile.org/en/1.3.1/index.html): Application deployment and systems administration tasks.
+ * [django-compressor](https://github.com/jezdez/django_compressor): Compresses linked and inline javascript or CSS into a single cached file.
 
 
 ### Credits
 
 Much of the layout is taken from a great [post](http://blog.zacharyvoase.com/2010/02/03/django-project-conventions/) by Zachary Voase.
+
+
+### Contributors
+
+ * [Scotty Vernon](http://twitter.com/KingScooty): django-compressor integration, included modernizr, boilerplate markup in base.html, and organised javascripts folder.
 
 
 ### Licence
