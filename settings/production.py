@@ -14,7 +14,7 @@ DATABASES = {
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 THUMBNAIL_DEBUG = DEBUG
-COMPRESS_ROOT = STATIC_ROOT
+
 
 # settings/local.py is ignored to allow for easy settings
 # overrides without affecting others
