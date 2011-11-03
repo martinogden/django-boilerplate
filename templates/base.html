@@ -1,4 +1,4 @@
-<!doctype html>
+{% load compress %}<!doctype html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
@@ -18,11 +18,10 @@
     
     {% compress css %}
     <link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/main.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/reset.css">
     {% endcompress %}
-    
-    {% compress js %}
-    <script src="{{ STATIC_URL}}javascripts/libs/modernizr-2.0.6.js"></script>
-    {% endcompress %}
+
+    {% compress js %}<script src="{{ STATIC_URL}}javascripts/libs/modernizr-2.0.6.js"></script>{% endcompress %}
     
 </head>
 <body>

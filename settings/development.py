@@ -9,8 +9,10 @@ DATABASES = {
     }
 }
 
-DEBUG = True
+DEBUG = False
 THUMBNAIL_DEBUG = True
+
+COMPRESS = True
 
 # settings/local.py is ignored to allow for easy settings
 # overrides without affecting others
