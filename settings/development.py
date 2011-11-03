@@ -12,6 +12,7 @@ DATABASES = {
 DEBUG = True
 THUMBNAIL_DEBUG = True
 
+
 # settings/local.py is ignored to allow for easy settings
 # overrides without affecting others
 try:

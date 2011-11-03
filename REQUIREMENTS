@@ -3,4 +3,6 @@ Django
 south
 fabric
 django-grappelli
-command_extensions
+django-extensions
+
+git+git://github.com/jezdez/django_compressor.git

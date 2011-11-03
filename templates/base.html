@@ -1,10 +1,43 @@
-<!DOCTYPE html>
-<html>
+{% load compress %}<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
     <title>{% block title %}{% endblock title %}</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico">
+    
+    {% compress css %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/main.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/reset.css">
+    {% endcompress %}
+
+    {% compress js %}<script src="{{ STATIC_URL}}javascripts/libs/modernizr-2.0.6.js"></script>{% endcompress %}
+    
 </head>
 <body>
     {% block content %}{% endblock content %}
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="{{ STATIC_URL }}javascripts/libs/jquery-1.6.4.min.js"%3E%3C/script%3E'))</script>
+    
+    {% compress js %}
+    {% endcompress %}
+    
+    <script>
+        var _gaq=[['_setAccount','UA-6516194-8'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
 </body>
 </html>
