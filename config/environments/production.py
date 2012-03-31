@@ -1,17 +1,18 @@
-from path import path
-from .common import *
-
+from ..settings import *
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': PROJECT_ROOT / 'development.sqlite3',
+        'ENGINE': '',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
-DEBUG = True
-THUMBNAIL_DEBUG = True
-
+DEBUG = False
+TEMPLATE_DEBUG = DEBUG
 
 # settings/local.py is ignored to allow for easy settings
 # overrides without affecting others

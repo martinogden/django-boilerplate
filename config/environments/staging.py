@@ -1,4 +1,4 @@
-from .common import *
+from ..settings import *
 
 DATABASES = {
     'default': {
@@ -11,10 +11,8 @@ DATABASES = {
     }
 }
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-THUMBNAIL_DEBUG = DEBUG
-
 
 # settings/local.py is ignored to allow for easy settings
 # overrides without affecting others

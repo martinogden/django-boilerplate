@@ -1,7 +1,6 @@
 *.pyc
+*.pyo
 .DS_Store
 *~
-settings/local.py
+config/environments/local.py
 media
-development.sqlite3
-
