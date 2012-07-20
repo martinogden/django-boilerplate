@@ -1,5 +1,5 @@
 from path import path
-from ..settings import *
+from config.settings import *
 
 
 DATABASES = {
