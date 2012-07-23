@@ -43,4 +43,4 @@ Much of the layout is taken from a great [post](http://blog.zacharyvoase.com/201
 
 ### Licence
 
-Licensed for use under BSD (same as [Django](https://code.djangoproject.com/browser/django/trunk/LICENSE)).
+Licensed for use under [GNU GPL](http://www.gnu.org/licenses/gpl.html).
