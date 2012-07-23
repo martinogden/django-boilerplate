@@ -40,7 +40,3 @@ Much of the layout is taken from a great [post](http://blog.zacharyvoase.com/201
 
  * [Scotty Vernon](http://twitter.com/KingScooty): django-compressor integration, included modernizr, boilerplate markup in base.html, and organised javascripts folder.
 
-
-### Licence
-
-Licensed for use under [GNU GPL](http://www.gnu.org/licenses/gpl.html).
